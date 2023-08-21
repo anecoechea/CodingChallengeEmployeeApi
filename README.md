@@ -84,3 +84,10 @@ Compensation from the persistence layer.
 
 ## Delivery
 Please upload your results to a publicly accessible Git repo. Free ones are provided by Github and Bitbucket.
+
+
+## Current Issues
+There seems to be an issue when the Lists of Employees are created as the only initialized field is the employee id. 
+I was unsure if this was intended but most likely all fields should be pulled from the DB when creating the list of direct reports.
+There is an issue with the reading of the compensation. Creating and storing the data seems to work fine however, there is an issue
+when getting the data back.
