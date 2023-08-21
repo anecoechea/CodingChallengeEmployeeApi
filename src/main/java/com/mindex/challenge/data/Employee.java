@@ -1,5 +1,8 @@
 package com.mindex.challenge.data;
 
+import jdk.internal.jline.internal.Log;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
@@ -57,6 +60,12 @@ public class Employee {
         return directReports;
     }
 
+    /**
+     *
+     * I think there is a bug when creating these because the only value that is store in the list
+     * is the employee id. Ideally the objects should also include the name, department, etc. Not
+     * sure exactly how to resolve this.
+     */
     public void setDirectReports(List<Employee> directReports) {
         this.directReports = directReports;
     }
